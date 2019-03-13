@@ -1,0 +1,2 @@
+providers:
+  - '@/lib/providers/AppServiceProvider'
