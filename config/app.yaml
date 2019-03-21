@@ -1,2 +1,4 @@
+env: 'local'
+
 providers:
   - '@/lib/providers/AppServiceProvider'
