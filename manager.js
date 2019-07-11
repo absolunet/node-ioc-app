@@ -1,8 +1,8 @@
 //--------------------------------------------------------
-//-- Tests - lint
+//-- Manager
 //--------------------------------------------------------
 'use strict';
 
-const tester = require('@absolunet/tester');
+const manager = require('@absolunet/manager');
 
-tester.npmPackage.validate();
+manager.singleScriptsRunner();
