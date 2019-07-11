@@ -1,5 +1,7 @@
-test
+.DS_Store
 .editorconfig
 .eslintrc.yaml
 .gitignore
 .travis.yml
+test
+manager.js
