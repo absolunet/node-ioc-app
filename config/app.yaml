@@ -1,4 +1,17 @@
+# Your application name.
+name: 'Node IoC app'
+
+# The current environment the application is running on
 env: 'local'
+
+# The application locale to be used
+locale: 'en'
+
+# The application fallback locale to be used
+# if the given locale is either invalid or not supported
+fallback_locale: 'en'
 
 providers:
   - '@/lib/providers/AppServiceProvider'
+  - '@/lib/providers/ConsoleServiceProvider'
+  - '@/lib/providers/RouteServiceProvider'
