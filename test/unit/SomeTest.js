@@ -3,7 +3,7 @@
 //--------------------------------------------------------
 'use strict';
 
-const { classes: { TestCase } } = require('@absolunet/ioc');
+const { TestCase } = require('@absolunet/ioc').classes;
 
 
 class SomeTest extends TestCase {

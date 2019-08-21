@@ -5,7 +5,7 @@
 
 
 // Loading main application
-const app = require('./lib');
+const app = require('./bootstrap');
 
 
 // Exposing application for public use.

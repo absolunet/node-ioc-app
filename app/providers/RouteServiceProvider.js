@@ -3,10 +3,10 @@
 //--------------------------------------------------------
 'use strict';
 
-const __                               = require('@absolunet/private-registry');
-const { classes: { ServiceProvider } } = require('@absolunet/ioc');
-const webRoutes                        = require('./../../routes/web');
-const apiRoutes                        = require('./../../routes/api');
+const __                  = require('@absolunet/private-registry');
+const { ServiceProvider } = require('@absolunet/ioc').classes;
+const webRoutes           = require('../../routes/web');
+const apiRoutes           = require('../../routes/api');
 
 
 class RouteServiceProvider extends ServiceProvider {
@@ -16,8 +16,8 @@ class RouteServiceProvider extends ServiceProvider {
 	 */
 	boot() {
 		__(this).set('router', this.app.make('router'));
-		this.mapWebRoutes();
 		this.mapApiRoutes();
+		this.mapWebRoutes();
 	}
 
 	/**

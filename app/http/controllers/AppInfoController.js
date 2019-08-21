@@ -3,7 +3,7 @@
 //--------------------------------------------------------
 'use strict';
 
-const { classes: { Controller } } = require('@absolunet/ioc');
+const { Controller } = require('@absolunet/ioc').classes;
 
 
 class AppInfoController extends Controller {
@@ -22,7 +22,7 @@ class AppInfoController extends Controller {
 	 */
 	show() {
 		return this.json({
-			name: this.config.get('app.name', 'Node IoC App'),
+			name: this.config.get('app.name', 'Node IoC'),
 			locale: this.config.get('app.locale', this.config.get('app.fallback_locale', 'en'))
 		});
 	}

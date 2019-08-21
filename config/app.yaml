@@ -1,17 +1,26 @@
 # Your application name.
-name: '{{APP_NAME|Node IoC app}}'
+name: '{{APP_NAME|Node IoC}}'
+
 
 # The current environment the application is running on
 env: '{{APP_ENV|production}}'
 
+
 # The application locale to be used
 locale: '{{APP_LOCALE|en}}'
+
 
 # The application fallback locale to be used
 # if the given locale is either invalid or not supported
 fallback_locale: 'en'
 
+
+# Application service providers
 providers:
-  - '@/lib/providers/AppServiceProvider'
-  - '@/lib/providers/ConsoleServiceProvider'
-  - '@/lib/providers/RouteServiceProvider'
+  # List the third party service providers here
+
+
+  # List your own service providers here
+  - '@/app/providers/AppServiceProvider'
+  - '@/app/providers/ConsoleServiceProvider'
+  - '@/app/providers/RouteServiceProvider'

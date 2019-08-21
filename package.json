@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/ioc-app",
-  "version": "0.4.2",
+  "version": "0.6.1",
   "description": "IoC",
   "definition": "",
   "homepage": "https://github.com/absolunet/node-ioc-app",
@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/absolunet/node-ioc-app/issues"
   },
+  "bin": {
+    "ioc": "ioc"
+  },
   "engines": {
     "node": ">= 12.5.0"
   },
@@ -27,8 +30,8 @@
   "scripts": {
     "test": "npm run test:standards && npm run test:feature && npm run test:unit",
     "test:standards": "ava test/standards",
-    "test:feature": "node bin/app test --feature",
-    "test:unit": "node bin/app test --unit",
+    "test:feature": "node ioc test --feature",
+    "test:unit": "node ioc test --unit",
     "installer": "node manager.js --task=installer",
     "outdated": "node manager.js --task=outdated",
     "build": "node manager.js --task=build",
@@ -37,11 +40,10 @@
   "devDependencies": {
     "@absolunet/manager": "^1.1.0",
     "@absolunet/tester": "2.6.8",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
-    "jest": "24.8.0"
+    "jest": "24.9.0"
   },
   "dependencies": {
-    "@absolunet/ioc": "^0.4.1",
+    "@absolunet/ioc": "^0.6.1",
     "@absolunet/private-registry": "^2.0.0"
   }
 }
