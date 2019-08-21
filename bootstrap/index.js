@@ -13,7 +13,7 @@ const { app } = require('@absolunet/ioc');
 
 // Configuring context of the application
 app
-	.useBasePath(path.join(__dirname, '..', '..'))
+	.useBasePath(path.dirname(__dirname))
 	.setContext(module);
 
 

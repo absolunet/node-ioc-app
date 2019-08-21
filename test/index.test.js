@@ -2,12 +2,17 @@
 
 const app = require('./..');
 
-const { classes: { Tester } }                              = require('@absolunet/ioc');
-const { TEST_ENGINE: engine, TEST_REPOSITORY: repository } = process.env; // eslint-disable-line no-process-env
 
-const AppServiceProvider     = require('./../lib/providers/AppServiceProvider');
-const ConsoleServiceProvider = require('./../lib/providers/ConsoleServiceProvider');
-const RouteServiceProvider   = require('./../lib/providers/RouteServiceProvider');
+const { Tester } = require('@absolunet/ioc').classes;
+const {
+	TEST_ENGINE: engine,
+	TEST_REPOSITORY: repository
+} = process.env; // eslint-disable-line no-process-env
+
+
+const AppServiceProvider     = require('../app/providers/AppServiceProvider');
+const ConsoleServiceProvider = require('../app/providers/ConsoleServiceProvider');
+const RouteServiceProvider   = require('../app/providers/RouteServiceProvider');
 
 
 const providers = [

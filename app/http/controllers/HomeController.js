@@ -3,7 +3,7 @@
 //--------------------------------------------------------
 'use strict';
 
-const { classes: { Controller } } = require('@absolunet/ioc');
+const { Controller } = require('@absolunet/ioc').classes;
 
 
 class HomeController extends Controller {
