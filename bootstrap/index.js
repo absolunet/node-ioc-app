@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC App - Bootstrapped application
+//-- Node IoC - Application bootstrapper
 //--------------------------------------------------------
 'use strict';
 

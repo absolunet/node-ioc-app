@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC App - Test - Feature - MyMethodTest
+//-- Node IoC - Test - Feature - MyMethodTest
 //--------------------------------------------------------
 'use strict';
 
