@@ -22,5 +22,4 @@ providers:
 
   # List your own service providers here
   - '@/app/providers/AppServiceProvider'
-  - '@/app/providers/ConsoleServiceProvider'
   - '@/app/providers/RouteServiceProvider'

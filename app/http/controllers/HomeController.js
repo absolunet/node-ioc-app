@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC App - HTTP - Controllers - Home Controller
+//-- Node IoC - HTTP - Controllers - Home Controller
 //--------------------------------------------------------
 'use strict';
 

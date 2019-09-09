@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC App - Providers - Application service provider
+//-- Node IoC - Providers - Application service provider
 //--------------------------------------------------------
 'use strict';
 
