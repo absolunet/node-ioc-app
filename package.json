@@ -44,7 +44,7 @@
     "jest": "24.9.0"
   },
   "dependencies": {
-    "@absolunet/ioc": "0.7.1",
+    "@absolunet/ioc": "^0.8.1",
     "@absolunet/private-registry": "^2.0.0"
   }
 }
