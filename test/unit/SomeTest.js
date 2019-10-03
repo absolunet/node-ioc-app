@@ -1,9 +1,9 @@
 //--------------------------------------------------------
-//-- Node IoC - Test - Unit - Some Test
+//-- Node IoC - Test - Unit - SomeTest
 //--------------------------------------------------------
 'use strict';
 
-const { TestCase } = require('@absolunet/ioc').classes;
+const TestCase = require('../TestCase.js');
 
 
 class SomeTest extends TestCase {

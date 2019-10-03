@@ -9,14 +9,14 @@ const app = require('..');
 
 
 // Load the Node IoC tester class, which is not bind into the application.
-const { Tester } = require('@absolunet/ioc').classes;
+const { Tester } = require('@absolunet/ioc');
 
 
 // Retrieve environment variables to pass to the tester instance
 const { TEST_ENGINE, TEST_REPOSITORY } = process.env; // eslint-disable-line no-process-env
 
 
-// Instanciate the tester, boot it, set the engine from
+// Instantiate the tester, boot it, set the engine from
 // environment configuration and run the given test suite.
 app.make(Tester)
 	.boot()

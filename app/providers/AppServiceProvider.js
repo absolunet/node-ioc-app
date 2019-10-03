@@ -3,7 +3,7 @@
 //--------------------------------------------------------
 'use strict';
 
-const { ServiceProvider } = require('@absolunet/ioc').classes;
+const { ServiceProvider } = require('@absolunet/ioc');
 
 
 class AppServiceProvider extends ServiceProvider {
