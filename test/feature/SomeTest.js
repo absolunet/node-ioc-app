@@ -1,12 +1,12 @@
 //--------------------------------------------------------
-//-- Node IoC - Test - Feature - MyMethodTest
+//-- Node IoC - Test - Feature - SomeTest
 //--------------------------------------------------------
 'use strict';
 
-const { TestCase } = require('@absolunet/ioc').classes;
+const TestCase = require('../TestCase.js');
 
 
-class MyMethodTest extends TestCase {
+class SomeTest extends TestCase {
 
 	testSomething() {
 		this.expect(true).toBe(true);
@@ -15,4 +15,4 @@ class MyMethodTest extends TestCase {
 }
 
 
-module.exports = MyMethodTest;
+module.exports = SomeTest;

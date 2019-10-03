@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/ioc-app",
-  "version": "0.8.3",
+  "version": "0.9.0",
   "description": "IoC",
   "definition": "",
   "homepage": "https://github.com/absolunet/node-ioc-app",
@@ -44,7 +44,7 @@
     "jest": "24.9.0"
   },
   "dependencies": {
-    "@absolunet/ioc": "^0.8.3",
+    "@absolunet/ioc": "0.9.0",
     "@absolunet/private-registry": "^2.0.0"
   }
 }

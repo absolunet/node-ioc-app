@@ -4,7 +4,7 @@
 'use strict';
 
 const __                  = require('@absolunet/private-registry');
-const { ServiceProvider } = require('@absolunet/ioc').classes;
+const { ServiceProvider } = require('@absolunet/ioc');
 const webRoutes           = require('../../routes/web');
 const apiRoutes           = require('../../routes/api');
 
