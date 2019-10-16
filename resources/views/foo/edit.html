@@ -1,0 +1,17 @@
+{{include name="layouts.app"}}
+<div class="grid-container">
+	<div class="grid-x">
+		<div class="cell">
+			<p>{{:~t('Foo edit')}}.</p>
+		</div>
+		<form action="/foo/1" method="post">
+			<input type="hidden" name="_method" value="patch">
+			<input type="submit" value="Update Foo">
+		</form>
+		<form action="/foo/1" method="post">
+			<input type="hidden" name="_method" value="delete">
+			<input type="submit" value="Delete Foo...">
+		</form>
+	</div>
+</div>
+{{/include}}

@@ -16,16 +16,16 @@ connections:
 
   sqlite:
     driver: sqlite
-    filename: '{{DB_FILE|@/database/database.sqlite}}'
+    filename: '{{DB_FILE|@/storage/database/database.sqlite}}'
 
 
-# Paths to the different database folders.
+# Paths to the different database-related folders from the database folder.
 # This will be used when creating the Knex instance.
 paths:
-  factories: '@/database/factories'
-  models: '@/database/models'
-  migrations: '@/database/migrations'
-  seeds: '@/database/seeds'
+  factories: 'factories'
+  migrations: 'migrations'
+  models: 'models'
+  seeds: 'seeds'
 
 
 # The migrations table to be used by Knex.

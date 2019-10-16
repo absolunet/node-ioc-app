@@ -1,12 +1,17 @@
 //--------------------------------------------------------
-//-- IoC
+//-- Node IoC
 //--------------------------------------------------------
 'use strict';
 
+// Load application
+const app = require('./dist/node');
 
-// Loading main application
-const app = require('./bootstrap');
+
+// Configure context of the application
+app
+	.useBasePath(__dirname)
+	.setContext(module);
 
 
-// Exposing application for public use.
+// Export the application, ready to use!
 module.exports = app;
