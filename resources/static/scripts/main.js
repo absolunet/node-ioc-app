@@ -1,5 +1,5 @@
 $(function() {
-	console.log('Initializing foundation...');
+	console.log('Initializing Foundation...');
 
 	$(document).foundation();
 

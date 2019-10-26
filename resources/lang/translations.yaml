@@ -13,3 +13,11 @@ This is an example page:
 Welcome:
   en: Welcome
   fr: Bienvenue
+
+/create:
+  en: /create
+  fr: /creer
+
+/edit:
+  en: /edit
+  fr: /editer
