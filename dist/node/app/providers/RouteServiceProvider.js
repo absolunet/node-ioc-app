@@ -11,12 +11,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //--------------------------------------------------------
 //-- Node IoC - Providers - Router service provider
 //--------------------------------------------------------
+
+/**
+ * Route service provider.
+ */
 class RouteServiceProvider extends _ioc.ServiceProvider {
   /**
-   * {@inheritdoc}
+   * Boot the service provider.
    */
   boot() {
     (0, _privateRegistry.default)(this).set('router', this.app.make('router'));
+    this.map();
+  }
+  /**
+   * Map the application routes.
+   */
+
+
+  map() {
     this.mapApiRoutes();
     this.mapWebRoutes();
   }
@@ -40,7 +52,9 @@ class RouteServiceProvider extends _ioc.ServiceProvider {
     }, this.app.getModule(this.app.routesPath('api.js')));
   }
   /**
-   * @returns {Router}
+   * Application router.
+   *
+   * @type {Router}
    */
 
 

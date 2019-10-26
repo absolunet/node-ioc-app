@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- Node IoC - Web routes
 //--------------------------------------------------------
-'use strict';
+
 
 export default (router, app) => {
 
@@ -13,14 +13,23 @@ export default (router, app) => {
 	//
 	// Let's build a nice website!
 
-	router.get('/', 'HomeController@index').name('home');
+	router.get('/',        'HomeController@index').name('home');
 	router.get('/example', 'HomeController@example').name('example');
-	router.resource('foo', 'FooController');
+
 
 	// Here, you can choose the static assets path.
-	// The /static can be changed whenever you want.
+	// The "/static" path can be changed whenever you want.
 	// It will point to the configured public path,
-	// which is by default in [app root]/resources/static/.
-	router.static('/static', app.make('path.public'));
+	// which is by default in "[app root]/resources/static".
+
+	router.static('/static',  app.publicPath());
+
+
+	// Here, you can choose the publicly available uploaded files path.
+	// The "/upload" path can be changed whenever you want.
+	// It will point to the configured public uploads path,
+	// which is by default in "[app root]/storage/uploads/public".
+
+	router.static('/uploads', app.uploadPath('public'));
 
 };

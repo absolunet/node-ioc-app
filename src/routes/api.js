@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- Node IoC - API routes
 //--------------------------------------------------------
-'use strict';
+
 
 export default (router) => {
 
@@ -10,6 +10,6 @@ export default (router) => {
 	//
 	// Let's build a nice API!
 
-	router.get('/app', 'AppInfoController@show').name('app-info.show');
+	router.get('/app', 'AppController@index').name('app.index');
 
 };

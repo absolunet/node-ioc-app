@@ -7,6 +7,10 @@ var _ioc = require("@absolunet/ioc");
 //--------------------------------------------------------
 //-- Node IoC - Providers - Application service provider
 //--------------------------------------------------------
+
+/**
+ * Application service provider.
+ */
 class AppServiceProvider extends _ioc.ServiceProvider {
   /**
    * Register any application services.

@@ -1,10 +1,10 @@
-//--------------------------------------------------------
-//-- Node IoC - Web routes
-//--------------------------------------------------------
-'use strict';
+"use strict";
 
 exports.default = void 0;
 
+//--------------------------------------------------------
+//-- Node IoC - Web routes
+//--------------------------------------------------------
 var _default = (router, app) => {
   // Here, you may register all your web routes.
   // You can register any routes you want, bind them to
@@ -14,13 +14,17 @@ var _default = (router, app) => {
   //
   // Let's build a nice website!
   router.get('/', 'HomeController@index').name('home');
-  router.get('/example', 'HomeController@example').name('example');
-  router.resource('foo', 'FooController'); // Here, you can choose the static assets path.
-  // The /static can be changed whenever you want.
+  router.get('/example', 'HomeController@example').name('example'); // Here, you can choose the static assets path.
+  // The "/static" path can be changed whenever you want.
   // It will point to the configured public path,
-  // which is by default in [app root]/resources/static/.
+  // which is by default in "[app root]/resources/static".
 
-  router.static('/static', app.make('path.public'));
+  router.static('/static', app.publicPath()); // Here, you can choose the publicly available uploaded files path.
+  // The "/upload" path can be changed whenever you want.
+  // It will point to the configured public uploads path,
+  // which is by default in "[app root]/storage/uploads/public".
+
+  router.static('/uploads', app.uploadPath('public'));
 };
 
 exports.default = _default;

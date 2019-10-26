@@ -11,13 +11,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //--------------------------------------------------------
 //-- Node IoC
 //--------------------------------------------------------
-// Importing Node IoC application class.
-// Importing application bootstrapper.
+// Import Node IoC application class.
+// Import application bootstrapper.
 // Create a fresh application instance.
 const app = _ioc.Application.make(); // Bootstrap the application.
 
 
-(0, _bootstrap.default)(app); // Exposing the application.
+(0, _bootstrap.default)(app); // Expose the application.
 
 var _default = app;
 exports.default = _default;

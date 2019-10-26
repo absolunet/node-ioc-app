@@ -2,36 +2,26 @@
 
 exports.default = void 0;
 
-var _Kernel = _interopRequireDefault(require("../app/console/Kernel"));
+var _handlers = _interopRequireDefault(require("./handlers"));
 
-var _Handler = _interopRequireDefault(require("../app/exceptions/Handler"));
+var _lifecycle = _interopRequireDefault(require("./lifecycle"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //--------------------------------------------------------
 //-- Node IoC - Bootstrap
 //--------------------------------------------------------
-var _default = app => {
-  let kernel; // Register main handlers in the container
+var _default = async (app, shouldHandleRequest = true) => {
+  // Use the application root folder as base path.
+  // Since this file will be compiled into "dist/node", one level deeper than "src"
+  // we must consider this path instead of the current one.
+  app.useBasePath(app.formatPath(__dirname, '..', '..', '..')); // Use context of the module that required this file
 
-  app.singleton('kernel', _Kernel.default);
-  app.singleton('exception.handler', _Handler.default); // Add a delay before bootstrapping to allow external registering.
+  app.setContext(module.parent); // Bootstrap the main application handlers, which are the application kernel and the exception handler.
 
-  new Promise(setTimeout).then(async () => {
-    // Make the kernel instance
-    kernel = app.make(`kernel`); // Boot the application.
+  (0, _handlers.default)(app); // Initialize the lifecycle and await for its termination.
 
-    app.bootIfNotBooted(); // Handle the incoming request.
-
-    await kernel.handle();
-  }).catch(async error => {
-    // If an error occurred, handle it through the defined exception handler.
-    await app.make('exception.handler').handle(error);
-  }).finally(async () => {
-    // When the request, or an error, has been handled, terminate the request.
-    await kernel.terminate();
-  });
-  return app;
+  await (0, _lifecycle.default)(app, shouldHandleRequest);
 };
 
 exports.default = _default;

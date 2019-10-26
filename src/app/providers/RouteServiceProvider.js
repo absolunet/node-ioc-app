@@ -6,13 +6,23 @@ import __                  from '@absolunet/private-registry';
 import { ServiceProvider } from '@absolunet/ioc';
 
 
+/**
+ * Route service provider.
+ */
 class RouteServiceProvider extends ServiceProvider {
 
 	/**
-	 * {@inheritdoc}
+	 * Boot the service provider.
 	 */
 	boot() {
 		__(this).set('router', this.app.make('router'));
+		this.map();
+	}
+
+	/**
+	 * Map the application routes.
+	 */
+	map() {
 		this.mapApiRoutes();
 		this.mapWebRoutes();
 	}
@@ -35,7 +45,9 @@ class RouteServiceProvider extends ServiceProvider {
 	}
 
 	/**
-	 * @returns {Router}
+	 * Application router.
+	 *
+	 * @type {Router}
 	 */
 	get router() {
 		return __(this).get('router');

@@ -4,16 +4,21 @@
 'use strict';
 
 
-// Load the application
-const app = require('../..');
+// Load the application and the tester class.
+const { Application, Tester } = require('@absolunet/ioc');
+const bootstrap               = require('../../dist/node/bootstrap');
 
 
-// Load the Node IoC tester class, which is not bind into the application.
-const { Tester } = require('@absolunet/ioc');
-
-
-// Retrieve environment variables to pass to the tester instance
+// Retrieve environment variables to pass to the tester instance.
 const { TEST_ENGINE, TEST_REPOSITORY } = process.env; // eslint-disable-line no-process-env
+
+
+// Create new application.
+const app = Application.make();
+
+
+// Bootstrap the application, and make sure it does not handle the current request.
+bootstrap(app, false);
 
 
 // Instantiate the tester.

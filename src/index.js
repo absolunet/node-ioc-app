@@ -2,11 +2,11 @@
 //-- Node IoC
 //--------------------------------------------------------
 
-// Importing Node IoC application class.
+// Import Node IoC application class.
 import { Application } from '@absolunet/ioc';
 
 
-// Importing application bootstrapper.
+// Import application bootstrapper.
 import bootstrap from './bootstrap';
 
 
@@ -18,5 +18,5 @@ const app = Application.make();
 bootstrap(app);
 
 
-// Exposing the application.
+// Expose the application.
 export default app;

@@ -5,6 +5,9 @@
 import { ServiceProvider } from '@absolunet/ioc';
 
 
+/**
+ * Application service provider.
+ */
 class AppServiceProvider extends ServiceProvider {
 
 	/**

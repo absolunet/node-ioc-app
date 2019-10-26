@@ -9,9 +9,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //--------------------------------------------------------
 //-- Node IoC - HTTP - Controllers - Home Controller
 //--------------------------------------------------------
-class AppInfoController extends _Controller.default {
+
+/**
+ * Application controller that handles API request for information.
+ */
+class AppController extends _Controller.default {
   /**
-   * {@inheritdoc}
+   * @inheritdoc
    */
   static get dependencies() {
     return ['config'];
@@ -19,20 +23,22 @@ class AppInfoController extends _Controller.default {
   /**
    * Show application basic information.
    *
-   * @returns {response}
+   * @returns {response} JSON response.
    */
 
 
-  show() {
+  index() {
+    const name = this.config.get('app.name', 'Node IoC');
+    const locale = this.config.get('app.locale', this.config.get('app.fallback_locale', 'en'));
     return this.json({
-      name: this.config.get('app.name', 'Node IoC'),
-      locale: this.config.get('app.locale', this.config.get('app.fallback_locale', 'en'))
+      name,
+      locale
     });
   }
 
 }
 
-var _default = AppInfoController;
+var _default = AppController;
 exports.default = _default;
 module.exports = exports.default;
 module.exports.default = exports.default;

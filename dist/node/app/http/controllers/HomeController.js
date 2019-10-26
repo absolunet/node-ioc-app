@@ -9,11 +9,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //--------------------------------------------------------
 //-- Node IoC - HTTP - Controllers - Home Controller
 //--------------------------------------------------------
+
+/**
+ * Home controller that shows main application pages.
+ */
 class HomeController extends _Controller.default {
   /**
    * Show the index page.
    *
-   * @returns {response}
+   * @returns {response} Home page.
    */
   index() {
     return this.view('pages.home');
@@ -21,7 +25,7 @@ class HomeController extends _Controller.default {
   /**
    * Show an example page.
    *
-   * @returns {response}
+   * @returns {response} An example page.
    */
 
 

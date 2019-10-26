@@ -5,12 +5,15 @@
 import { ConsoleKernel } from '@absolunet/ioc';
 
 
+/**
+ * Application kernel that handle incoming CLI request.
+ */
 class Kernel extends ConsoleKernel {
 
 	/**
 	 * @inheritdoc
 	 */
-	onBeforeHandling() {
+	beforeHandling() {
 		// Here, you can perform actions before handling request.
 		this.registerCommands();
 	}
@@ -18,14 +21,14 @@ class Kernel extends ConsoleKernel {
 	/**
 	 * @inheritdoc
 	 */
-	onAfterHandling() {
+	afterHandling() {
 		// Here, you can perform actions after request was handled, if no error was thrown.
 	}
 
 	/**
 	 * @inheritdoc
 	 */
-	onTerminating() {
+	terminating() {
 		// Here, you can perform actions before the application terminates.
 	}
 

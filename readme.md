@@ -39,10 +39,6 @@ You are welcome to contribute to the Node IoC framework. You can find the offici
 
 To ensure that the Node IoC community is welcoming to all, please review and abide by the [Code of Conduct](code_of_conduct.md).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an email to Thierry Parent (tparent@absolunet.com) or Jean-Baptiste Landry (jblandry@absolunet.com). All security vulnerabilities will be promptly addressed.
-
 
 ## License
 

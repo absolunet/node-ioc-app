@@ -7,11 +7,15 @@ var _ioc = require("@absolunet/ioc");
 //--------------------------------------------------------
 //-- Node IoC - Console - Kernel
 //--------------------------------------------------------
+
+/**
+ * Application kernel that handle incoming CLI request.
+ */
 class Kernel extends _ioc.ConsoleKernel {
   /**
    * @inheritdoc
    */
-  onBeforeHandling() {
+  beforeHandling() {
     // Here, you can perform actions before handling request.
     this.registerCommands();
   }
@@ -20,14 +24,14 @@ class Kernel extends _ioc.ConsoleKernel {
    */
 
 
-  onAfterHandling() {} // Here, you can perform actions after request was handled, if no error was thrown.
+  afterHandling() {} // Here, you can perform actions after request was handled, if no error was thrown.
 
   /**
    * @inheritdoc
    */
 
 
-  onTerminating() {} // Here, you can perform actions before the application terminates.
+  terminating() {} // Here, you can perform actions before the application terminates.
 
   /**
    * Register commands in the command registrar based on application command path.
