@@ -13,6 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [1.0.0-alpha.2] - 2019-10-29
+
+### Changed
+ - Update package to `1.0.0-alpha.2`
+ - Simplify `AppController`
+
+
+
 ## [1.0.0-alpha.1] - 2019-10-26
 
 ### Added
@@ -190,7 +198,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.1...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.2...HEAD
+[1.0.0-alpha.2]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.1...1.0.0-alpha.2
 [1.0.0-alpha.1]: https://github.com/absolunet/node-ioc-app/compare/0.9.0...1.0.0-alpha.1
 [0.9.0]:         https://github.com/absolunet/node-ioc-app/compare/0.8.3...0.9.0
 [0.8.3]:         https://github.com/absolunet/node-ioc-app/compare/0.8.1...0.8.3
