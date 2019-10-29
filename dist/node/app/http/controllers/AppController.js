@@ -28,8 +28,10 @@ class AppController extends _Controller.default {
 
 
   index() {
-    const name = this.config.get('app.name', 'Node IoC');
-    const locale = this.config.get('app.locale', this.config.get('app.fallback_locale', 'en'));
+    const {
+      name,
+      locale
+    } = this.config.get('app');
     return this.json({
       name,
       locale

@@ -43,7 +43,7 @@
 	
 
 	<header>
-		<p class="package"><a href="../">@absolunet/ioc-app</a><span class="version">1.0.0-alpha.1</span></p>
+		<p class="package"><a href="../">@absolunet/ioc-app</a><span class="version">1.0.0-alpha.2</span></p>
 		<a href="https://github.com/absolunet/node-ioc-app" class="github" data-external="external">View on GitHub</a>
 	</header>
 
@@ -89,8 +89,7 @@ class AppController extends Controller {
 	 * @returns {response} JSON response.
 	 */
 	index() {
-		const name   = this.config.get('app.name',  'Node IoC');
-		const locale = this.config.get('app.locale', this.config.get('app.fallback_locale', 'en'));
+		const { name, locale } = this.config.get('app');
 
 		return this.json({ name, locale });
 	}
