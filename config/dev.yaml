@@ -10,6 +10,11 @@ ide: '{{DEV_IDE}}'
 # The dumper parameters to style your debugging world.
 dumper:
 
+  # List all environment where a dump should not appear
+  disabled_environments:
+    - production
+    - staging
+
   # The default theme to use.
   default: '{{DEV_DUMPER_THEME|absolunet}}'
 
