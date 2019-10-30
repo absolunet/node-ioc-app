@@ -13,6 +13,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [1.0.0-alpha.3] - 2019-10-30
+
+### Added
+ - Dumper disabled environments configuration
+
+### Changed
+ - Updated framework to `1.0.0-alpha.3`
+
+### Fixed
+ - Use correct path for databases storage
+
+
+
 ## [1.0.0-alpha.2] - 2019-10-29
 
 ### Changed
@@ -198,7 +211,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.2...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.3...HEAD
+[1.0.0-alpha.3]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.2...1.0.0-alpha.3
 [1.0.0-alpha.2]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.1...1.0.0-alpha.2
 [1.0.0-alpha.1]: https://github.com/absolunet/node-ioc-app/compare/0.9.0...1.0.0-alpha.1
 [0.9.0]:         https://github.com/absolunet/node-ioc-app/compare/0.8.3...0.9.0

@@ -16,7 +16,7 @@ connections:
 
   sqlite:
     driver: sqlite
-    filename: '{{DB_FILE|@/storage/database/database.sqlite}}'
+    filename: '{{DB_FILE|@/storage/databases/database.sqlite}}'
 
 
 # Paths to the different database-related folders from the database folder.
