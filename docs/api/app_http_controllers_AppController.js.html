@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>http/controllers/Controller.js - @absolunet/ioc-app API documentation</title>
+	<title>app/http/controllers/AppController.js - @absolunet/ioc-app API documentation</title>
 
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta http-equiv="cleartype" content="on">
@@ -43,18 +43,18 @@
 	
 
 	<header>
-		<p class="package"><a href="../">@absolunet/ioc-app</a><span class="version">1.0.0-alpha.3</span></p>
+		<p class="package"><a href="../">@absolunet/ioc-app</a><span class="version">1.0.0-alpha.4</span></p>
 		<a href="https://github.com/absolunet/node-ioc-app" class="github" data-external="external">View on GitHub</a>
 	</header>
 
 	<div class="container">
 		<nav><div>
-			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="Kernel.html">Kernel</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Kernel.html#beforeHandling">beforeHandling</a></li><li data-type='method'><a href="Kernel.html#afterHandling">afterHandling</a></li><li data-type='method'><a href="Kernel.html#terminating">terminating</a></li><li data-type='method'><a href="Kernel.html#registerCommands">registerCommands</a></li></ul></li><li><a href="Handler.html">Handler</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Handler.html#report">report</a></li><li data-type='method'><a href="Handler.html#renderResponse">renderResponse</a></li><li data-type='method'><a href="Handler.html#renderConsole">renderConsole</a></li></ul></li><li><a href="AppController.html">AppController</a><ul class='members'><li data-type='member'><a href="AppController.html#.dependencies">dependencies</a></li></ul><ul class='methods'><li data-type='method'><a href="AppController.html#index">index</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li><li><a href="HomeController.html">HomeController</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="HomeController.html#index">index</a></li><li data-type='method'><a href="HomeController.html#example">example</a></li></ul></li><li><a href="AppServiceProvider.html">AppServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="AppServiceProvider.html#register">register</a></li><li data-type='method'><a href="AppServiceProvider.html#boot">boot</a></li></ul></li><li><a href="RouteServiceProvider.html">RouteServiceProvider</a><ul class='members'><li data-type='member'><a href="RouteServiceProvider.html#router">router</a></li></ul><ul class='methods'><li data-type='method'><a href="RouteServiceProvider.html#boot">boot</a></li><li data-type='method'><a href="RouteServiceProvider.html#map">map</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapWebRoutes">mapWebRoutes</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapApiRoutes">mapApiRoutes</a></li></ul></li></ul>
+			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="Kernel.html">Kernel</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Kernel.html#beforeHandling">beforeHandling</a></li><li data-type='method'><a href="Kernel.html#afterHandling">afterHandling</a></li><li data-type='method'><a href="Kernel.html#terminating">terminating</a></li><li data-type='method'><a href="Kernel.html#registerCommands">registerCommands</a></li></ul></li><li><a href="Handler.html">Handler</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Handler.html#report">report</a></li><li data-type='method'><a href="Handler.html#renderResponse">renderResponse</a></li><li data-type='method'><a href="Handler.html#renderConsole">renderConsole</a></li></ul></li><li><a href="AppController.html">AppController</a><ul class='members'><li data-type='member'><a href="AppController.html#.dependencies">dependencies</a></li></ul><ul class='methods'><li data-type='method'><a href="AppController.html#index">index</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li><li><a href="HomeController.html">HomeController</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="HomeController.html#index">index</a></li><li data-type='method'><a href="HomeController.html#example">example</a></li></ul></li><li><a href="AppServiceProvider.html">AppServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="AppServiceProvider.html#register">register</a></li><li data-type='method'><a href="AppServiceProvider.html#boot">boot</a></li></ul></li><li><a href="RouteServiceProvider.html">RouteServiceProvider</a><ul class='members'><li data-type='member'><a href="RouteServiceProvider.html#router">router</a></li></ul><ul class='methods'><li data-type='method'><a href="RouteServiceProvider.html#boot">boot</a></li><li data-type='method'><a href="RouteServiceProvider.html#map">map</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapWebRoutes">mapWebRoutes</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapApiRoutes">mapApiRoutes</a></li></ul></li><li><a href="DatabaseSeeder.html">DatabaseSeeder</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="DatabaseSeeder.html#seed">seed</a></li></ul></li></ul>
 		</div></nav>
 
 		<div id="main">
 		
-			<h1 class="page-title">http/controllers/Controller.js</h1>
+			<h1 class="page-title">app/http/controllers/AppController.js</h1>
 		
 
 			
@@ -65,23 +65,39 @@
     <section>
         <article>
             <pre id="line" class="line-numbers"><code class="language-js">//--------------------------------------------------------
-//-- Node IoC - HTTP - Controllers - Controller
+//-- Node IoC - HTTP - Controllers - Home Controller
 //--------------------------------------------------------
 
-import { Controller as BaseController } from '@absolunet/ioc';
+import Controller from './Controller';
 
 
 /**
- * Base application controller.
- *
- * @abstract
+ * Application controller that handles API request for information.
  */
-class Controller extends BaseController {
+class AppController extends Controller {
+
+	/**
+	 * @inheritdoc
+	 */
+	static get dependencies() {
+		return ['config'];
+	}
+
+	/**
+	 * Show application basic information.
+	 *
+	 * @returns {response} JSON response.
+	 */
+	index() {
+		const { name, locale } = this.config.get('app');
+
+		return this.json({ name, locale });
+	}
 
 }
 
 
-export default Controller;
+export default AppController;
 </code></pre>
         </article>
     </section>
