@@ -13,8 +13,9 @@ class Kernel extends ConsoleKernel {
 	/**
 	 * @inheritdoc
 	 */
-	beforeHandling() {
+	async beforeHandling() {
 		// Here, you can perform actions before handling request.
+		await this.loadTranslations();
 		this.registerCommands();
 	}
 
@@ -30,6 +31,15 @@ class Kernel extends ConsoleKernel {
 	 */
 	terminating() {
 		// Here, you can perform actions before the application terminates.
+	}
+
+	/**
+	 * Load translations to prevent async translations.
+	 *
+	 * @returns {Promise} The async process promise.
+	 */
+	async loadTranslations() {
+		await this.app.make('translator').driver().loadTranslations();
 	}
 
 	/**
