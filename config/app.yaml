@@ -6,6 +6,10 @@ name: '{{APP_NAME|Node IoC}}'
 env: '{{APP_ENV|production}}'
 
 
+# Use debugging tools
+debug: '{{APP_DEBUG|false}}'
+
+
 # The application locale to be used
 locale: '{{APP_LOCALE|en}}'
 
