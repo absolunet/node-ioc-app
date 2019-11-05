@@ -2,6 +2,8 @@
 
 exports.default = void 0;
 
+require("./mixins");
+
 var _handlers = _interopRequireDefault(require("./handlers"));
 
 var _lifecycle = _interopRequireDefault(require("./lifecycle"));

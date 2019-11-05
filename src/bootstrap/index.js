@@ -2,6 +2,7 @@
 //-- Node IoC - Bootstrap
 //--------------------------------------------------------
 
+import './mixins';
 import handlers  from './handlers';
 import lifecycle from './lifecycle';
 
