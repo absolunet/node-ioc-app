@@ -10,8 +10,8 @@ import { Application } from '@absolunet/ioc';
 import bootstrap from './bootstrap';
 
 
-// Create a fresh application instance.
-const app = Application.make();
+// Create the application instance.
+const app = Application.getInstance();
 
 
 // Bootstrap the application.

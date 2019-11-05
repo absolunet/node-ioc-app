@@ -13,8 +13,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //--------------------------------------------------------
 // Import Node IoC application class.
 // Import application bootstrapper.
-// Create a fresh application instance.
-const app = _ioc.Application.make(); // Bootstrap the application.
+// Create the application instance.
+const app = _ioc.Application.getInstance(); // Bootstrap the application.
 
 
 (0, _bootstrap.default)(app); // Expose the application.
