@@ -13,6 +13,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [1.0.0-beta.1] - 2019-11-05
+
+### Added
+ - Custom mixin systems for extensions within the bootstrapping system
+ - `APP_DEBUG` environment variable support
+ - `app.debug` configuration feed by `APP_DEBUG` environment variable
+ - `dev.dumper.enabled` configuration feed by `APP_DEBUG` environment variable
+
+### Changed
+ - Updated framework to `1.0.0-beta.1`
+ - Used application singleton instead of fresh instance
+
+
+
 ## [1.0.0-alpha.4] - 2019-11-01
 
 ### Added
@@ -221,7 +235,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.4...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.1...HEAD
+[1.0.0-beta.1]:  https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.4...1.0.0-beta.1
 [1.0.0-alpha.4]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.3...1.0.0-alpha.4
 [1.0.0-alpha.3]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.2...1.0.0-alpha.3
 [1.0.0-alpha.2]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.1...1.0.0-alpha.2
