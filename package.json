@@ -52,7 +52,6 @@
   "devDependencies": {
     "@absolunet/manager": "2.0.0",
     "@absolunet/tester": "3.0.5",
-    "ava": "^2.4.0",
     "jest": "24.9.0"
   },
   "dependencies": {
