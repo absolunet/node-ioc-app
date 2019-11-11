@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC - Database - Seeds - DatabaseSeeder
+//-- Node IoC - Database - Seeds - Database Seeder
 //--------------------------------------------------------
 
 import { Seeder } from '@absolunet/ioc';

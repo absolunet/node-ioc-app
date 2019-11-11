@@ -5,7 +5,7 @@ exports.default = void 0;
 var _ioc = require("@absolunet/ioc");
 
 //--------------------------------------------------------
-//-- Node IoC - Providers - Application service provider
+//-- Node IoC - Providers - Application Service Provider
 //--------------------------------------------------------
 
 /**

@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC - Providers - Router service provider
+//-- Node IoC - Providers - Route Service Provider
 //--------------------------------------------------------
 
 import __                  from '@absolunet/private-registry';

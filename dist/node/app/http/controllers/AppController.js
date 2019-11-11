@@ -7,7 +7,7 @@ var _Controller = _interopRequireDefault(require("./Controller"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //--------------------------------------------------------
-//-- Node IoC - HTTP - Controllers - Home Controller
+//-- Node IoC - HTTP - Controllers - Application Controller
 //--------------------------------------------------------
 
 /**

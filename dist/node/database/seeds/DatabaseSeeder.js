@@ -5,7 +5,7 @@ exports.default = void 0;
 var _ioc = require("@absolunet/ioc");
 
 //--------------------------------------------------------
-//-- Node IoC - Database - Seeds - DatabaseSeeder
+//-- Node IoC - Database - Seeds - Database Seeder
 //--------------------------------------------------------
 
 /**

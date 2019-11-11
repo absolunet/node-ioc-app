@@ -9,7 +9,7 @@ var _ioc = require("@absolunet/ioc");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //--------------------------------------------------------
-//-- Node IoC - Providers - Router service provider
+//-- Node IoC - Providers - Route Service Provider
 //--------------------------------------------------------
 
 /**

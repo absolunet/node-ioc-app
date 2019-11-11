@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC - Providers - Application service provider
+//-- Node IoC - Providers - Application Service Provider
 //--------------------------------------------------------
 
 import { ServiceProvider } from '@absolunet/ioc';

@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC - HTTP - Controllers - Home Controller
+//-- Node IoC - HTTP - Controllers - Application Controller
 //--------------------------------------------------------
 
 import Controller from './Controller';
