@@ -17,8 +17,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  */
 class RouteServiceProvider extends _ioc.ServiceProvider {
   /**
+   * @inheritdoc
+   */
+  get name() {
+    return 'Node IoC - Route';
+  }
+  /**
    * Boot the service provider.
    */
+
+
   boot() {
     (0, _privateRegistry.default)(this).set('router', this.app.make('router'));
     this.map();

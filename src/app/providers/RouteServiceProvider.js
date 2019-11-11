@@ -12,6 +12,13 @@ import { ServiceProvider } from '@absolunet/ioc';
 class RouteServiceProvider extends ServiceProvider {
 
 	/**
+	 * @inheritdoc
+	 */
+	get name() {
+		return 'Node IoC - Route';
+	}
+
+	/**
 	 * Boot the service provider.
 	 */
 	boot() {

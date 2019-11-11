@@ -11,6 +11,13 @@ import { ServiceProvider } from '@absolunet/ioc';
 class AppServiceProvider extends ServiceProvider {
 
 	/**
+	 * @inheritdoc
+	 */
+	get name() {
+		return 'Node IoC - Application';
+	}
+
+	/**
 	 * Register any application services.
 	 */
 	register() {
