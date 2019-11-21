@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC - Providers - Router service provider
+//-- Node IoC - Providers - Route Service Provider
 //--------------------------------------------------------
 
 import __                  from '@absolunet/private-registry';
@@ -10,6 +10,13 @@ import { ServiceProvider } from '@absolunet/ioc';
  * Route service provider.
  */
 class RouteServiceProvider extends ServiceProvider {
+
+	/**
+	 * @inheritdoc
+	 */
+	get name() {
+		return 'Node IoC - Route';
+	}
 
 	/**
 	 * Boot the service provider.

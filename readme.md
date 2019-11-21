@@ -10,7 +10,7 @@
 
 ## About Node IoC
 
-Node IoC is a [node.js](https://nodejs.org) framework designed to help developers create elegant and well-designed applications, for both the Web and the CLI. Based on _[SOLID](https://en.wikipedia.org/wiki/SOLID)_ principles, it comes out with a lot of features that removes the pain of crafting new applications:
+Node IoC is a [Node.js](https://nodejs.org) framework designed to help developers create elegant and well-designed applications, for both the Web and the CLI. Based on _[SOLID](https://en.wikipedia.org/wiki/SOLID)_ principles, it comes out with a lot of features that removes the pain of crafting new applications:
 
  - Simple, yet powerful, [dependency injection container](https://documentation.absolunet.com/docs-node-ioc/en/1.0/architecture/container)
  - Complete [CLI command system](https://documentation.absolunet.com/docs-node-ioc/en/1.0/basics/commands) powered by [Yargs](http://yargs.js.org/)

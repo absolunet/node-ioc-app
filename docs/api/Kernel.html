@@ -43,13 +43,13 @@
 	
 
 	<header>
-		<p class="package"><a href="../">@absolunet/ioc-app</a><span class="version">1.0.0-alpha.4</span></p>
+		<p class="package"><a href="../">@absolunet/ioc-app</a><span class="version">1.0.0-beta.2</span></p>
 		<a href="https://github.com/absolunet/node-ioc-app" class="github" data-external="external">View on GitHub</a>
 	</header>
 
 	<div class="container">
 		<nav><div>
-			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="Kernel.html">Kernel</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Kernel.html#beforeHandling">beforeHandling</a></li><li data-type='method'><a href="Kernel.html#afterHandling">afterHandling</a></li><li data-type='method'><a href="Kernel.html#terminating">terminating</a></li><li data-type='method'><a href="Kernel.html#registerCommands">registerCommands</a></li></ul></li><li><a href="Handler.html">Handler</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Handler.html#report">report</a></li><li data-type='method'><a href="Handler.html#renderResponse">renderResponse</a></li><li data-type='method'><a href="Handler.html#renderConsole">renderConsole</a></li></ul></li><li><a href="AppController.html">AppController</a><ul class='members'><li data-type='member'><a href="AppController.html#.dependencies">dependencies</a></li></ul><ul class='methods'><li data-type='method'><a href="AppController.html#index">index</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li><li><a href="HomeController.html">HomeController</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="HomeController.html#index">index</a></li><li data-type='method'><a href="HomeController.html#example">example</a></li></ul></li><li><a href="AppServiceProvider.html">AppServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="AppServiceProvider.html#register">register</a></li><li data-type='method'><a href="AppServiceProvider.html#boot">boot</a></li></ul></li><li><a href="RouteServiceProvider.html">RouteServiceProvider</a><ul class='members'><li data-type='member'><a href="RouteServiceProvider.html#router">router</a></li></ul><ul class='methods'><li data-type='method'><a href="RouteServiceProvider.html#boot">boot</a></li><li data-type='method'><a href="RouteServiceProvider.html#map">map</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapWebRoutes">mapWebRoutes</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapApiRoutes">mapApiRoutes</a></li></ul></li><li><a href="DatabaseSeeder.html">DatabaseSeeder</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="DatabaseSeeder.html#seed">seed</a></li></ul></li></ul>
+			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="Kernel.html">Kernel</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Kernel.html#beforeHandling">beforeHandling</a></li><li data-type='method'><a href="Kernel.html#afterHandling">afterHandling</a></li><li data-type='method'><a href="Kernel.html#terminating">terminating</a></li><li data-type='method'><a href="Kernel.html#loadTranslations">loadTranslations</a></li><li data-type='method'><a href="Kernel.html#registerCommands">registerCommands</a></li></ul></li><li><a href="Handler.html">Handler</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="Handler.html#report">report</a></li><li data-type='method'><a href="Handler.html#renderResponse">renderResponse</a></li><li data-type='method'><a href="Handler.html#renderConsole">renderConsole</a></li></ul></li><li><a href="AppController.html">AppController</a><ul class='members'><li data-type='member'><a href="AppController.html#.dependencies">dependencies</a></li></ul><ul class='methods'><li data-type='method'><a href="AppController.html#index">index</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li><li><a href="HomeController.html">HomeController</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="HomeController.html#index">index</a></li><li data-type='method'><a href="HomeController.html#example">example</a></li></ul></li><li><a href="AppServiceProvider.html">AppServiceProvider</a><ul class='members'><li data-type='member'><a href="AppServiceProvider.html#name">name</a></li></ul><ul class='methods'><li data-type='method'><a href="AppServiceProvider.html#register">register</a></li><li data-type='method'><a href="AppServiceProvider.html#boot">boot</a></li></ul></li><li><a href="RouteServiceProvider.html">RouteServiceProvider</a><ul class='members'><li data-type='member'><a href="RouteServiceProvider.html#name">name</a></li><li data-type='member'><a href="RouteServiceProvider.html#router">router</a></li></ul><ul class='methods'><li data-type='method'><a href="RouteServiceProvider.html#boot">boot</a></li><li data-type='method'><a href="RouteServiceProvider.html#map">map</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapWebRoutes">mapWebRoutes</a></li><li data-type='method'><a href="RouteServiceProvider.html#mapApiRoutes">mapApiRoutes</a></li></ul></li><li><a href="DatabaseSeeder.html">DatabaseSeeder</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="DatabaseSeeder.html#seed">seed</a></li></ul></li></ul>
 		</div></nav>
 
 		<div id="main">
@@ -190,7 +190,7 @@
 
     
 
-    <h4 class="name" id="beforeHandling"><span class="type-signature"></span>beforeHandling<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="beforeHandling"><span class="type-signature">(async) </span>beforeHandling<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -287,7 +287,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="app_console_Kernel.js.html#line-24">app/console/Kernel.js:24</a>
+        <a href="app_console_Kernel.js.html#line-25">app/console/Kernel.js:25</a>
     </li></ul></dd>
     
 
@@ -372,7 +372,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="app_console_Kernel.js.html#line-31">app/console/Kernel.js:31</a>
+        <a href="app_console_Kernel.js.html#line-32">app/console/Kernel.js:32</a>
     </li></ul></dd>
     
 
@@ -445,6 +445,117 @@
 
     
 
+    <h4 class="name" id="loadTranslations"><span class="type-signature">(async) </span>loadTranslations<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app_console_Kernel.js.html#line-41">app/console/Kernel.js:41</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Load translations to prevent async translations.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The async process promise.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+</div>
+
+        
+            
+<div class="method">
+
+    
+
     <h4 class="name" id="registerCommands"><span class="type-signature"></span>registerCommands<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
@@ -457,7 +568,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="app_console_Kernel.js.html#line-38">app/console/Kernel.js:38</a>
+        <a href="app_console_Kernel.js.html#line-48">app/console/Kernel.js:48</a>
     </li></ul></dd>
     
 

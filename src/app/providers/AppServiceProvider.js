@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Node IoC - Providers - Application service provider
+//-- Node IoC - Providers - Application Service Provider
 //--------------------------------------------------------
 
 import { ServiceProvider } from '@absolunet/ioc';
@@ -9,6 +9,13 @@ import { ServiceProvider } from '@absolunet/ioc';
  * Application service provider.
  */
 class AppServiceProvider extends ServiceProvider {
+
+	/**
+	 * @inheritdoc
+	 */
+	get name() {
+		return 'Node IoC - Application';
+	}
 
 	/**
 	 * Register any application services.

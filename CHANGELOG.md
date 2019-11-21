@@ -13,6 +13,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [1.0.0-beta.3] - 2019-11-21
+
+### Added
+ - Added service provider names
+
+### Changed
+ - Updated framework to `1.0.0-beta.3`
+ - Changed default favicon
+
+### Removed
+ - Removed Ava from dependencies
+
+
+
 ## [1.0.0-beta.1] - 2019-11-05
 
 ### Added
@@ -235,7 +249,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.1...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.3...HEAD
+[1.0.0-beta.3]:  https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.1...1.0.0-beta.3
 [1.0.0-beta.1]:  https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.4...1.0.0-beta.1
 [1.0.0-alpha.4]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.3...1.0.0-alpha.4
 [1.0.0-alpha.3]: https://github.com/absolunet/node-ioc-app/compare/1.0.0-alpha.2...1.0.0-alpha.3

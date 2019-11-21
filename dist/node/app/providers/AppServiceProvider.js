@@ -5,7 +5,7 @@ exports.default = void 0;
 var _ioc = require("@absolunet/ioc");
 
 //--------------------------------------------------------
-//-- Node IoC - Providers - Application service provider
+//-- Node IoC - Providers - Application Service Provider
 //--------------------------------------------------------
 
 /**
@@ -13,8 +13,16 @@ var _ioc = require("@absolunet/ioc");
  */
 class AppServiceProvider extends _ioc.ServiceProvider {
   /**
+   * @inheritdoc
+   */
+  get name() {
+    return 'Node IoC - Application';
+  }
+  /**
    * Register any application services.
    */
+
+
   register() {} // You may register any service either as a binding or a singleton using
   // this.app.bind('service.name', concrete) or
   // this.app.singleton('service.name', concrete). However, you should not
