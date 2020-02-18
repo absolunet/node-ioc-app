@@ -18,8 +18,8 @@ dumper:
   # All the available themes.
   themes:
     absolunet:
-      indent: 4   # The indentation size.
-      open: false # If set to true, all the objects and arrays will be opened by default.
+      indent: 4     # The indentation size.
+      open:   false # If set to true, all the objects and arrays will be opened by default.
 
       font:
         name:   Fira mono # The font name.

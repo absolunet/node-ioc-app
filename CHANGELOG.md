@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+ - `cache.enabled` configuration key, default to `true`
+ - `commands` translation file with all default command translations in `en` and `fr`
+
+### Changed
+ - Updated framework to `1.0.0`
+
 
 
 ## [1.0.0-rc.2] - 2019-12-04

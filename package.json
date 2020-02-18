@@ -55,7 +55,7 @@
     "jest": "24.9.0"
   },
   "dependencies": {
-    "@absolunet/ioc": "1.0.0-rc.2",
+    "@absolunet/ioc": "1.0.0",
     "@absolunet/private-registry": "^2.0.0"
   }
 }
