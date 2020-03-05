@@ -11,12 +11,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+
+## [1.0.1] - 2020-03-05
+
 ### Added
  - `cache.enabled` configuration key, default to `true`
  - `commands` translation file with all default command translations in `en` and `fr`
 
 ### Changed
- - Updated framework to `1.0.0`
+ - Updated framework to `1.0.1`
+ - Updated `@absolunet/manager` (dev) to `2.1.0`
+ - Updated `@absolunet/tester` (dev) to `3.2.2`
+ - Updated `jest` (dev) to `25.1.0`
 
 
 
@@ -271,7 +278,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-rc.2...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.1...HEAD
+[1.0.1]:         https://github.com/absolunet/node-ioc-app/compare/1.0.0-rc.2...1.0.1
 [1.0.0-rc.2]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-rc.1...1.0.0-rc.2
 [1.0.0-rc.1]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.3...1.0.0-rc.1
 [1.0.0-beta.3]:  https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.1...1.0.0-beta.3
