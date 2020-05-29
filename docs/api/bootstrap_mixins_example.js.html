@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>app/http/controllers/HomeController.js - @absolunet/ioc-app API documentation</title>
+	<title>bootstrap/mixins/example.js - @absolunet/ioc-app API documentation</title>
 
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta http-equiv="cleartype" content="on">
@@ -54,7 +54,7 @@
 
 		<div id="main">
 		
-			<h1 class="page-title">app/http/controllers/HomeController.js</h1>
+			<h1 class="page-title">bootstrap/mixins/example.js</h1>
 		
 
 			
@@ -65,43 +65,40 @@
     <section>
         <article>
             <pre id="line" class="line-numbers"><code class="language-js">//--------------------------------------------------------
-//-- Node IoC - HTTP - Controllers - Home Controller
+//-- Node IoC - Bootstrap - Mixins - Example
 //--------------------------------------------------------
 
-import Controller from './Controller';
+import { mixins } from '@absolunet/ioc';
 
 
 /**
- * Home controller that shows main application pages.
+ * Example mixin.
  *
- * @memberof app.http.controllers
- * @augments app.http.controllers.Controller
+ * @class
+ * @name Example
+ * @memberof bootstrap.mixins
  * @hideconstructor
  */
-class HomeController extends Controller {
+mixins.factory('example', (SuperClass) => {
 
 	/**
-	 * Show the index page.
-	 *
-	 * @returns {response} Home page.
+	 * Example mixin.
 	 */
-	index() {
-		return this.view('pages.home');
-	}
+	return class ExampleMixin extends SuperClass {
 
-	/**
-	 * Show an example page.
-	 *
-	 * @returns {response} An example page.
-	 */
-	example() {
-		return this.view('pages.example');
-	}
+		/**
+		 * Example method.
+		 *
+		 * @memberof bootstrap.mixins.Example
+		 * @instance
+		 */
+		method() {
+			//
+		}
 
-}
+	};
 
-
-export default HomeController;
+});
 </code></pre>
         </article>
     </section>

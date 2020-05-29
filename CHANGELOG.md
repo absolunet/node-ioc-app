@@ -13,6 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [2.0.0] - 2020-05-29
+
+### Added
+ - Classes JSDoc
+
+### Changed
+ - Updated framework to `2.0.0`
+ - Changed lifecycle error handler to catch new `ApplicationBootingError`
+
+
+
 ## [1.0.1] - 2020-03-05
 
 ### Added
@@ -165,11 +176,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - `stack` logging channel with `single` channel in list
  - `storage/framework/cache/data` folder, with ignored content by Git
  - `resources/lang` folder with `translations.yaml` file containing default view translations
- 
+
 ### Changed
  - Updated framework to `0.8.1`
  - Updated `ava` to `2.4.0`
- - Views use `t()` translation helper for text content 
+ - Views use `t()` translation helper for text content
 
 
 
@@ -183,7 +194,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - Updated framework to `0.7.1`
  - `file` logging channel renamed to `single`
  - Renamed `test/index.test.js` to `test/bootstrap.test.js`
- 
+
 ### Removed
  - `ConsoleServiceProvider` in favor of kernel auto-registration
 
@@ -227,7 +238,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - Use of environment variables in configuration by default
  - Updated `jest` to `24.8.0`
  - `.env` file ignored by Git
- 
+
 ### Removed
  - `routes/controller.js` in favor of auto-registration
 
@@ -255,7 +266,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - `AppInfoController` as API controller demo
  - `HomeController` as Web controller demo
  - Feature tests folder with test examples
- 
+
  ### Changed
  - Updated framework to `0.3.0`
  - `ConsoleServiceProvider` registered through configuration instead of by `AppServiceProvider`
@@ -278,7 +289,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/1.0.1...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/2.0.0...HEAD
+[2.0.0]:         https://github.com/absolunet/node-ioc-app/compare/1.0.1...2.0.0
 [1.0.1]:         https://github.com/absolunet/node-ioc-app/compare/1.0.0-rc.2...1.0.1
 [1.0.0-rc.2]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-rc.1...1.0.0-rc.2
 [1.0.0-rc.1]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.3...1.0.0-rc.1
