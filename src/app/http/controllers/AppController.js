@@ -7,6 +7,10 @@ import Controller from './Controller';
 
 /**
  * Application controller that handles API request for information.
+ *
+ * @memberof app.http.controllers
+ * @augments app.http.controllers.Controller
+ * @hideconstructor
  */
 class AppController extends Controller {
 

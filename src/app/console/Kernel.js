@@ -7,6 +7,10 @@ import { ConsoleKernel } from '@absolunet/ioc';
 
 /**
  * Application kernel that handle incoming CLI request.
+ *
+ * @memberof app.console
+ * @augments ioc.foundation.console.Kernel
+ * @hideconstructor
  */
 class Kernel extends ConsoleKernel {
 

@@ -7,6 +7,10 @@ import Controller from './Controller';
 
 /**
  * Home controller that shows main application pages.
+ *
+ * @memberof app.http.controllers
+ * @augments app.http.controllers.Controller
+ * @hideconstructor
  */
 class HomeController extends Controller {
 

@@ -13,6 +13,10 @@ var _ioc = require("@absolunet/ioc");
 
 /**
  * Application kernel that handle incoming CLI request.
+ *
+ * @memberof app.console
+ * @augments ioc.foundation.console.Kernel
+ * @hideconstructor
  */
 class Kernel extends _ioc.ConsoleKernel {
   /**

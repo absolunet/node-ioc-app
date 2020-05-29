@@ -15,6 +15,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 /**
  * Application controller that handles API request for information.
+ *
+ * @memberof app.http.controllers
+ * @augments app.http.controllers.Controller
+ * @hideconstructor
  */
 class AppController extends _Controller.default {
   /**

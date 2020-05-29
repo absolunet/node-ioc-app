@@ -14,6 +14,9 @@ var _ioc = require("@absolunet/ioc");
 /**
  * Base application controller.
  *
+ * @memberof app.http.controllers
+ * @augments ioc.http.Controller
+ * @hideconstructor
  * @abstract
  */
 class Controller extends _ioc.Controller {}

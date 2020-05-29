@@ -15,6 +15,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 /**
  * Home controller that shows main application pages.
+ *
+ * @memberof app.http.controllers
+ * @augments app.http.controllers.Controller
+ * @hideconstructor
  */
 class HomeController extends _Controller.default {
   /**

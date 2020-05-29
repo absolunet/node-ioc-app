@@ -7,6 +7,10 @@ import { ServiceProvider } from '@absolunet/ioc';
 
 /**
  * Application service provider.
+ *
+ * @memberof app.providers
+ * @augments ioc.foundation.ServiceProvider
+ * @hideconstructor
  */
 class AppServiceProvider extends ServiceProvider {
 

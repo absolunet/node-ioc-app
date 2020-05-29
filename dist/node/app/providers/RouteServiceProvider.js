@@ -17,6 +17,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 /**
  * Route service provider.
+ *
+ * @memberof app.providers
+ * @augments ioc.foundation.ServiceProvider
+ * @hideconstructor
  */
 class RouteServiceProvider extends _ioc.ServiceProvider {
   /**

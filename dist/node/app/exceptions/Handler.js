@@ -13,6 +13,10 @@ var _ioc = require("@absolunet/ioc");
 
 /**
  * Application exception handler.
+ *
+ * @memberof app.exceptions
+ * @augments ioc.foundation.exceptions.Handler
+ * @hideconstructor
  */
 class Handler extends _ioc.ExceptionHandler {
   /**
