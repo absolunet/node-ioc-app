@@ -5,13 +5,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _ioc = require("@absolunet/ioc");
+
 //--------------------------------------------------------
 //-- Node IoC - Bootstrap - Lifecycle
 //--------------------------------------------------------
 var _default = async (app, shouldHandleRequest = true) => {
-  // Define exception handler callback for base process unhandled error events.
+  let hadError = false; // Define exception handler callback for base process unhandled error events.
+
   const handleException = async exception => {
-    await app.make('exception.handler').handle(exception);
+    if (exception instanceof _ioc.ApplicationBootingError) {
+      // eslint-disable-next-line no-console
+      console.error(exception);
+    } else {
+      await app.make('exception.handler').handle(exception);
+    }
+
+    hadError = true;
   }; // Bind exception handler callback on unhandled error events.
 
 
@@ -19,9 +29,9 @@ var _default = async (app, shouldHandleRequest = true) => {
 
   const kernel = app.make('kernel'); // Boot the application.
 
-  app.bootIfNotBooted(); // If the application should handle request, handle it with the kernel instance.
+  app.bootIfNotBooted(); // If the application should handle request, and if there was no booting error, handle it with the kernel instance.
 
-  if (shouldHandleRequest) {
+  if (shouldHandleRequest && !hadError) {
     try {
       // Handle the incoming request.
       await kernel.handle();
